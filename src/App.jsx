@@ -6,7 +6,7 @@ function App() {
     alert("I Love You")
   }
   const handelClickTwo = (sum)=>{
-    const result = sum +5;
+    const result = sum +7;
     alert(result);
   }
 
