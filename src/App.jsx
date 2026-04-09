@@ -1,6 +1,7 @@
 
 import './App.css'
- 
+import Count from './Counter'
+import Cricket from './Cricket'
 
 function App() {
   
@@ -17,6 +18,9 @@ const handelClick3 =(sum)=>{
   return (
     <>
       <h1>Vite + React</h1>
+      <Count></Count>
+      <Cricket></Cricket>
+
       <button onClick={handelClick}>Click Me</button>
       <button onClick={handelClick2}>Click Me 2</button>
       <button onClick={()=>handelClick3(5)}>Click Me 3</button>
