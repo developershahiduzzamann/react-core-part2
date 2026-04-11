@@ -1,11 +1,20 @@
 
+import { Suspense } from 'react'
 import './App.css'
 import Count from './Counter'
 import Cricket from './Cricket'
 import Users from './Users'
 
+
+
+const fetchUsers=async()=>{
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+  return res.json();
+}
 function App() {
   
+const usersPromise = fetchUsers()
+
 function handelClick(){
 alert('click me')
 }
@@ -16,10 +25,14 @@ const handelClick3 =(sum)=>{
   const result = sum + 5;
   alert(result)
 }
+
+
   return (
     <>
       <h1>Vite + React</h1>
-      <Users></Users>
+      <Suspense fallback={<h3>Loading....</h3>}>
+        <Users usersPromise ={usersPromise} ></Users>
+      </Suspense>
 
       <Count></Count>
       <Cricket></Cricket>
