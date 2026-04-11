@@ -44,6 +44,12 @@
 .sCard{
   border: 1px solid blueviolet;
   margin-bottom: 10px;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card{
+  border: 2px solid salmon;
+  padding: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
 }
