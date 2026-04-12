@@ -6,7 +6,7 @@ export default function Postes({userPost}){
     return(
         <div className='sCard'>
             <h3>This Is A All Post: {posts.length}</h3>
-            {posts.map(post =><Commit key={post.id} post ={post}></Commit>)}
+            {posts.map(post =><Commit key={post.id } post ={post}></Commit>)}
         </div>
     )
 }
