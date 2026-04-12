@@ -22,7 +22,7 @@ export default function Cricket(){
     return(
         <div style={runStyle}>
             <h3>Bangladesh Cricket Runs</h3>
-            {runs > 50 && <p>Your Score Is 50</p>}
+            {runs > 50 && <p>Your Score is 5000</p>}
             <h1>Count: {runs}</h1>
 
             <button onClick={handelSingle}>Single</button>
